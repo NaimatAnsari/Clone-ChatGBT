@@ -37,15 +37,19 @@ const Chat = () => {
       <div className='w-[80%]'>
       <div className='h-[80%] border  flex flex-col  justify-center items-center text-white '>
         <div className='text-4xl font-bold'>APP GBT</div>
-        <div className='flex flex-wrap justify-evenly   max-w-[600px]:'>
+        <div className='flex flex-wrap justify-evenly py-4  max-w-[900px]:'>
           {
             example.map((item,index)=>(
-              <div className='text-lg text-[16px] mt-3  p-2 font-light min-w-[400px] border rounded cursor-pointer hover:bg-slate-600'>{item}</div>
+              <div className='text-lg text-[16px] mt-3 p-2 font-light min-w-[400px] border rounded cursor-pointer hover:bg-slate-600'>{item}</div>
             ))
           }
         </div>
       </div>
-      <div className='h-[20%] border '></div>
+      <div className='h-[20%] border '>
+        <div className='flex flex-col justify-center items-center w-full h-full'>
+          <input type="text" className='h-['/>
+        </div>
+      </div>
       </div>
     </div>
   )
