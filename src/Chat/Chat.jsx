@@ -29,7 +29,7 @@ const Chat = () => {
           {
             [1,2,3,4,5,6,7,8,9,0,1,2,3].map((item,index)=>(
               <div className='py-3 rounded   mt-2 text-lg flex  items-center gap-1 px-8 hover:bg-slate-600 cursor-pointer'>
-            <i class='bx bx-message-detail'></i>
+            <i className='bx bx-message-detail'></i>
             <p className='text-0xl'>My chat history</p>
           </div>
             ))
@@ -41,7 +41,7 @@ const Chat = () => {
         </div>
       </div>
       <div className='w-[80%]'>
-      <div className='h-[80%] border  flex flex-col  justify-center items-center text-white '>
+      <div className='h-[80%]  flex flex-col  justify-center items-center text-white '>
       
         <div className='text-4xl font-bold'>APP GBT</div>
         <div className='flex flex-wrap justify-evenly py-4  max-w-[900px]:'>
@@ -52,10 +52,14 @@ const Chat = () => {
           }
         </div>
       </div>
-      <div className='h-[20%] border '>
+      <div className='h-[20%]  '>
         <div className='flex flex-col justify-center items-center w-full h-full'>
-          <input type="text" className='h-[]'/>
+          <div className='flex justify-between w-[60%] bg-slate-800 rounded-lg items-center'>
+          <input type="text" className=' w-[100%] rounded-lg p-4 bg-slate-800 text-white outline-none ' placeholder='Type your message here...'/>
+          <span><i className='bx bx-send pr-4 text-white text-2xl'></i></span>
+          </div>
           
+          <small className='text-slate-500 mt-2 '>ChatGPT can make mistakes. Check important info.</small>
         </div>
       </div>
       </div>
